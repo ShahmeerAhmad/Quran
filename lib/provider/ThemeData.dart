@@ -29,10 +29,10 @@ class ThemeProvider extends ChangeNotifier {
 
     if (_selectedTheme == dark) {
       _selectedTheme = light;
-      await prefs.setBool("darkTheme", false);
+      await prefs.setBool("darkTheme", true);
     } else {
       _selectedTheme = dark;
-      await prefs.setBool("darkTheme", true);
+      await prefs.setBool("darkTheme", false);
     }
 
     notifyListeners();

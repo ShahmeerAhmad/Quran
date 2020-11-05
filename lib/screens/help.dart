@@ -85,7 +85,7 @@ class HelpGuide extends StatelessWidget {
             title: "Code Available",
             guideDescription:
                 "Code for v1.0.0 is available at the following link: " +
-                    "\n\nhttps://github.com/Shahmeerahmad" +
+                    "\n\nhttps://github.com/ShahmeerAhmad/Quran" +
                     "\n\nThe code is only for learning purposes, it has proper LICENSE that you are not allowed to publish this app.",
           ),
           GuideContainer(

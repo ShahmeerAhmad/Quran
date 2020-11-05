@@ -12,12 +12,11 @@ int initScreen;
 // await prefs.setInt("Screen", 1);
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  SharedPreferences _love = await SharedPreferences.getInstance();
 
   SharedPreferences.getInstance().then((prefs) {
     initScreen = prefs.getInt("initScreen") ?? 0;
     prefs.setInt("initScreen", 1);
-    var isDarkTheme = prefs.getBool("darkTheme") ?? false;
+    var isDarkTheme = prefs.getBool("darkTheme") ?? true;
     return runApp(ChangeNotifierProvider(
       child: MyApp(),
       create: (BuildContext context) {

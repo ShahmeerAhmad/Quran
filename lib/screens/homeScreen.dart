@@ -186,9 +186,9 @@ class _MainScreenState extends State<MainScreen>
 
   Future<void> share() async {
     await FlutterShare.share(
-        title: 'Example share',
-        text: 'Example share text',
-        linkUrl: 'https://flutter.dev/',
-        chooserTitle: 'Example Chooser Title');
+        title: 'App Share',
+        text: 'App still in process ',
+        linkUrl: 'https://github.com/ShahmeerAhmad/Quran',
+        chooserTitle: 'Provide a star to repository');
   }
 }

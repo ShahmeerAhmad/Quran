@@ -126,7 +126,7 @@ class _DrawerListState extends State<DrawerList> {
                   children: [
                     GestureDetector(
                       onTap: () async {
-                        const url = 'https://flutter.dev';
+                        const url = 'https://github.com/ShahmeerAhmad/Quran';
                         if (await canLaunch(url)) {
                           await launch(url);
                         } else {
