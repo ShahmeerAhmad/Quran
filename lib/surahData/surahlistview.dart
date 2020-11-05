@@ -1,6 +1,7 @@
 import 'package:auto_animated/auto_animated.dart';
 import 'package:flutter/material.dart';
 import 'package:quran/Api/ApiCalling.dart';
+import 'package:quran/screens/homeScreen.dart';
 import 'package:quran/surahData/surahayatview.dart';
 import 'package:quran/widgets/shimmer.dart';
 

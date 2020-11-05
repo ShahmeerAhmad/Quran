@@ -52,10 +52,12 @@ class _OverBoardsState extends State<OverBoards> {
         pages: pages,
         showBullets: true,
         skipCallback: () {
-          Navigator.pushNamed(context, '/homeScreen');
+          Navigator.pop(context);
+          return Navigator.pushNamed(context, '/homeScreen');
         },
         finishCallback: () {
-          Navigator.pushNamed(context, '/homeScreen');
+          Navigator.pop(context);
+          return Navigator.pushNamed(context, '/homeScreen');
         },
       ),
     );

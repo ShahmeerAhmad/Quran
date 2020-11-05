@@ -27,7 +27,7 @@ class _DrawerListState extends State<DrawerList> {
                 padding: EdgeInsets.all(8.0),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  height: 290,
+                  height: 300,
                   child: Column(
                     children: [
                       Container(
@@ -42,6 +42,7 @@ class _DrawerListState extends State<DrawerList> {
               ),
               GestureDetector(
                 onTap: () {
+                  Navigator.pop(context);
                   return Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) {
                     return SajdaViewList();
@@ -68,6 +69,7 @@ class _DrawerListState extends State<DrawerList> {
               ),
               GestureDetector(
                 onTap: () {
+                  Navigator.pop(context);
                   return Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) {
                     return Help();
@@ -94,6 +96,7 @@ class _DrawerListState extends State<DrawerList> {
               ),
               GestureDetector(
                 onTap: () {
+                  Navigator.pop(context);
                   return Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) {
                     return Setting();

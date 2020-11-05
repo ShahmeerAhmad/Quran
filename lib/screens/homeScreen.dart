@@ -173,12 +173,14 @@ class _MainScreenState extends State<MainScreen>
   }
 
   parabutton() {
+    Navigator.pop(context);
     return Navigator.push(context, MaterialPageRoute(builder: (context) {
       return ParahIndexView();
     }));
   }
 
   surahbutton() {
+    Navigator.pop(context);
     return Navigator.push(context, MaterialPageRoute(builder: (context) {
       return SurahListView();
     }));

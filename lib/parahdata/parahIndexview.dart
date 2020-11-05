@@ -1,6 +1,7 @@
 import 'package:auto_animated/auto_animated.dart';
 import 'package:flutter/material.dart';
 import 'package:quran/parahdata/parahView.dart';
+import 'package:quran/screens/homeScreen.dart';
 
 class ParahIndexView extends StatefulWidget {
   @override
